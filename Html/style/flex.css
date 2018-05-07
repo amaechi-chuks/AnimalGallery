@@ -1,0 +1,128 @@
+*{
+    position: relative;
+    background-size: cover;
+    animation: pulse 5s infinite;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out; 
+    animation-delay: 0s;
+}
+
+@keyframes pulse {
+    0% { 
+        background-color: #fff6cd;
+     }
+     50% {
+         background-color: #e1ce73;
+     }
+     55% {
+         background-color: #e1e073;
+     }
+     60% {
+        background-color: #f8f7fc;
+    }
+    80% {
+        background-color: #e5d8ed;
+    }
+    100% {
+        background-color: #faf7fc;
+    }
+    
+}
+
+body {
+    margin: 0px;
+    background-size: cover;
+}
+
+img {
+    width: 450px;
+    height: 300px;
+    transition: all 0.5s 0.5s;
+    box-shadow: 2px 2px 4px solid transparent;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 3em;
+   
+}
+.container-item {
+    border: 6px solid transparent;
+    order: 1;
+    flex: none;
+    
+}
+h1{
+    background-color: white;
+    font-family: none;
+    font-size: 3em;
+    border-bottom: 2px solid pink;
+    width: 600px;
+    text-align: center;
+    border: 2px solid pink;
+    border-left: 2px solid pink;
+    border-top: 2px solid pink;
+    box-shadow: 4px 4px 5px 4px;
+ }
+
+h1::after{
+ content: " -pretty animals";
+ cursor: pointer;
+}
+
+.search {
+    display: flex;
+    justify-content: space-around;
+    float: right;
+    margin: 0;
+
+}
+.search input{
+    padding: 15px;
+    display: inline;
+    border: 2px solid whitesmoke;
+     background-color: white;
+     font-size: 15px;
+     border-radius: 10px;
+     font-size: 20px;
+     font-weight: bold;
+}
+.search button{
+    cursor: pointer;
+    width: 90px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+button:hover{
+    font-weight:bold;
+    background-color: green;
+    border: 2px solid green;
+}
+.copy {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+   
+}
+.copy p {
+    font-size: 50px;
+    background-color: black;
+    font-weight: 100;
+    margin: 0;
+    font-family: cursive;
+    padding-bottom: 10px;
+    
+
+}
+.copy-inner{
+    color: green;
+    font-family:italic;
+    font-size: 60px;
+    background-color: firebrick;
+}
